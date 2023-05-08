@@ -22,7 +22,7 @@ pipeline {
         }
         stage('Publish') {
             steps {
-                echo 'Publishing..'
+                echo 'Publishing...'
                 echo 'Running docker push..'
             }
         }
