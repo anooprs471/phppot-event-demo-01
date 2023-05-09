@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Event management in php</title>
+<title>Event management in php Yup</title>
 
 <script type="text/javascript"
     src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.js"></script>

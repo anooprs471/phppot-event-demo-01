@@ -7,7 +7,7 @@ data:
   # Configuration values can be set as key-value properties
   MYSQL_HOST: 15.206.167.233
   MYSQL_USER: phppot
-  MYSQL_PASS: sqlpass
+  MYSQL_PASS: sqlpasssqlpass@redhat
   MYSQL_DB: full_calendar 
   
   # Or set as complete file contents (even JSON!)
