@@ -17,7 +17,8 @@ spec:
         runAsUser: 0
       containers:
       - name: event-php
-        image: anooprs471/phppot-event:<TAG>
+#        image: anooprs471/phppot-event:<TAG>
+        image: anooprs471/phppot-event-php-server
         ports:
           - name: httpport
             containerPort: 80

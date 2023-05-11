@@ -15,7 +15,7 @@ spec:
   rules:
   - http:
       paths:
-      - path: /
+      - path: /event-management-in-php
         pathType: Prefix
         backend:
           service:
