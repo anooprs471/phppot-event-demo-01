@@ -1,21 +1,11 @@
 pipeline {
   agent { label 'ec2-ubuntu-slave' }
   
-  environment{
-    DOCKER_USERNAME = credentials('DOCKER_USERNAME')
-    DOCKER_PASSWORD = credentials('DOCKER_PASSWORD')
-  }
   stages {
     stage('Fetch') {
       steps {
         git(branch: 'main', url: 'https://github.com/anooprs471/phppot-event-demo-01.git')
       }
-    }
-
-    stage('docker login') {
-		steps{
-			sh "docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD"
-		}
     }
 
     stage('Build-Image') {
@@ -25,8 +15,11 @@ pipeline {
 	
     stage('docker push') {
 		steps{
+			withCredentials([usernamePassword(credentialsId: 'Dockerhub_creds_username_password', passwordVariable: 'DOCKER_REGISTRY_PWD', usernameVariable: 'DOCKER_REGISTRY_USER')]){
+			sh "docker login -u $DOCKER_REGISTRY_USER -p $DOCKER_REGISTRY_PWD"
 			sh "docker push anooprs471/phppot-event:${BUILD_NUMBER}"
-		}
+			}
+			}
     }
 
     stage('Deploy App to Kubernetes') {     
