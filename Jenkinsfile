@@ -30,6 +30,5 @@ pipeline {
 	    sh 'kubectl apply -f phppot-event-ingress.yaml'
       }
     }
-
   }
 }
