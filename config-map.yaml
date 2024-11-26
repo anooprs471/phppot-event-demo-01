@@ -7,7 +7,7 @@ data:
   # Configuration values can be set as key-value properties
   MYSQL_HOST: mariadb-internal-service
   MYSQL_USER: phppot
-  MYSQL_PASS: sqlpasssqlpass@redhat
+  MYSQL_PASS: sqlpass
   MYSQL_DB: full_calendar 
   
   # Or set as complete file contents (even JSON!)
