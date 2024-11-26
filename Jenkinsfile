@@ -1,5 +1,5 @@
 pipeline {
-  agent { label 'ec2-agent-eks-demo' }
+  agent { label 'ec2-ubuntu-node' }
   
   stages {
     stage('Fetch') {
