@@ -34,7 +34,7 @@
 
 <body>
     <div class="phppot-container">
-        <h2>Event management in php demo 02</h2>
+        <h2>Event management in php demo 03</h2>
         <div class="response"></div>
         <div class="row">
             <input type="text" name="filter" id="filter"
