@@ -5,8 +5,8 @@ metadata:
   namespace: staging 
 data:
   # Configuration values can be set as key-value properties
-  MYSQL_HOST: mariadb-internal-service
-  MYSQL_USER: phppot
+  MYSQL_HOST: 65.2.186.241
+  MYSQL_USER: phpuser
   MYSQL_PASS: sqlpass
   MYSQL_DB: full_calendar 
   
